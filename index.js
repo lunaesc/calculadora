@@ -1,21 +1,21 @@
-var numero = 24;
+const txtOp1 = document.getElementById("op1")
+const txtOperador = document.getElementById("operador")
+const txtOp2 = document.getElementById("op2")
+const btnCalcular = document.getElementById("calcular")
+const pResultado = document.getElementById("resultado")
 
-//console.log("Mi edad es : " + numero)
-const miCostante = 3;
+btnCalcular.addEventListener("click", calcular)
+function calcular(){
+    const operador = txtOperador.value 
 
-
-function saludar(nombre, edad, altura){
-    console.log("hola, mi nombre es: " + nombre)
-    console.log("y mi edad es: " + edad);
-    console.log("y altura es: " + altura);
-
-
+    if (operador == "+" || operador == "-" ||  operador == "*" || operador == "/" ){
+        console.log("calculo posible")
+    }else{
+console.log("calculo imposible")
+    }
 }
-saludar("david", 24, 170)
 
-function multiplicar(num1, num2){
-    console.log("num1")
-}
+
 
 /*const txtOp1 = document.getElementById("op1")
 const txtOperacion = document.getElementById("operacion")
